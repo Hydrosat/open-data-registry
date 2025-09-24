@@ -1,5 +1,5 @@
 Name: Hydrosat Open Data
-Description: TO BE ADDED
+Description: "Open data from Hydrosat, an Earth observation and data analytics company with the mission of helping Earth manage its most valuable resource: water. Hydrosat's high spatiotemporal resolution thermal and multispectral data will close a longstanding gap in the EO landscape, enabling near real-time, data-driven decision-making across agriculture, wildfire, urban heat, defense, water resource management, and other use cases. Learn more at www.hydrosat.com."
 Documentation: https://satdocs.hydrosat.com/
 Contact: https://www.hydrosat.com/
 ManagedBy: "[Hydrosat](https://www.hydrosat.com)"
@@ -19,7 +19,7 @@ Tags:
   - cog
 License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)"
 Resources:
-  - Description: Hydrosat data includes L2 Surface Reflectance in the Visible-Near Infrared bands (Blue, Green, Red, Rededge1, Rededge2, Reedge3, NIR) and Surface Land Temperature in Thermal Bands (Band1 - 10.6um and Band2 - 12.51um)
+  - Description: Hydrosat Open Data, including Level-2 land surface temperature (LST) and surface reflectance in COG format
     ARN: arn:aws:s3:::hydrosat-open-data
     Region: us-west-2
     Type: S3 Bucket
@@ -53,3 +53,6 @@ DataAtWork:
     - Title: "How Satellite Sourced Data Layers Can Identify Agronomic Issues"
       URL: https://hydrosat.com/2025/03/26/how-satellite-sourced-data-layers-can-identify-agronomic-issues/
       AuthorName: Hydrosat
+    - Title: "Hydrosat Launches into Space and Humanity"
+      URL: https://hydrosat.com/blogs/hydrosat-launches-into-space-and-humanity/
+      AuthorName: Joshua Fisher
