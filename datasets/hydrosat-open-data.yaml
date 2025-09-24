@@ -1,0 +1,55 @@
+Name: Hydrosat Open Data
+Description: TO BE ADDED
+Documentation: https://satdocs.hydrosat.com/
+Contact: https://www.hydrosat.com/
+ManagedBy: "[Hydrosat](https://www.hydrosat.com)"
+UpdateFrequency: New data will be made available periodically.
+Collabs:
+  ASDI:
+    Tags:
+      - satellite imagery
+Tags:
+  - aws-pds
+  - satellite imagery
+  - earth observation
+  - image processing
+  - geospatial
+  - thermal
+  - stac
+  - cog
+License: "[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)"
+Resources:
+  - Description: Hydrosat data includes L2 Surface Reflectance in the Visible-Near Infrared bands (Blue, Green, Red, Rededge1, Rededge2, Reedge3, NIR) and Surface Land Temperature in Thermal Bands (Band1 - 10.6um and Band2 - 12.51um)
+    ARN: arn:aws:s3:::hydrosat-open-data
+    Region: us-west-2
+    Type: S3 Bucket
+    RequesterPays: False
+    Explore:
+    - '[STAC Catalog](https://<UPDATEME>.s3.us-west-2.amazonaws.com/stac/catalog.json)'
+    - '[STAC Browser](https://radiantearth.github.io/stac-browser/#/external/<UPDATEME>.s3.us-west-2.amazonaws.com/stac/catalog.json)'
+    - '[Browse Bucket](https://<UPDATEME>.s3.us-west-2.amazonaws.com/index.html)'
+DataAtWork:
+  Tutorials:
+    - Title: Preparing Hydrosat Data for Analysis
+      URL: https://satdocs.hydrosat.com/how-to-guides/preparing-data-for-analysis
+      AuthorName: Hydrosat
+    - Title: Searching the Hydrosat STAC Catalog
+      URL: https://satdocs.hydrosat.com/how-to-guides/searching-the-catalog
+      NotebookURL: https://github.com/Hydrosat/vz-tutorials/blob/main/searching-the-catalog.ipynb
+      AuthorName: Hydrosat
+    - Title: Using Cloud and QA Masks
+      URL: https://satdocs.hydrosat.com/how-to-guides/using-the-cloud-and-qa-masks
+      NotebookURL: https://github.com/Hydrosat/vz-tutorials/blob/main/using-the-cloud-mask.ipynb
+      AuthorName: Hydrosat
+    - Title: Accessing Hydrosat Data via STAC API in QGIS
+      URL: https://satdocs.hydrosat.com/how-to-guides/accessing-hydrosat-data-via-stac-api-in-qgis
+      AuthorName: Hydrosat
+  Tools & Applications:
+    - Title: Hydrosat API Reference and Specification
+      URL: https://satdocs.hydrosat.com/api-reference-and-specification
+      AuthorName: Hydrosat
+      AuthorURL: https://satdocs.hydrosat.com/open-data
+  Publications:
+    - Title: "How Satellite Sourced Data Layers Can Identify Agronomic Issues"
+      URL: https://hydrosat.com/2025/03/26/how-satellite-sourced-data-layers-can-identify-agronomic-issues/
+      AuthorName: Hydrosat
